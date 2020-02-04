@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package sumapi;
-option go_package = "sumpapipb";
+option go_package = "sumapipb";
 
 message Calculation {
   int32 first_number = 1;

@@ -6,12 +6,13 @@ import (
 	"net"
 
 	"github.com/goke-epapa/learn-grpc/sumapi/sumapipb"
+	sumpapipb "github.com/goke-epapa/learn-grpc/sumapi/sumapipb"
 	"google.golang.org/grpc"
 )
 
 type server struct{}
 
-func (*server) Sum(ctx context.Context, req *sumapipb.SumRequest) (*sumapipb.SumResponse, error) {
+func (*server) Sum(ctx context.Context, req *sumpapipb.SumRequest) (*sumapipb.SumResponse, error) {
 	firstNumber := req.GetCalculation().GetFirstNumber()
 	secondNumber := req.GetCalculation().GetSecondNumber()
 
