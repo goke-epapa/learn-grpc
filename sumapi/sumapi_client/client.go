@@ -23,7 +23,7 @@ func main() {
 
 func doUnary(c sumapipb.SumServiceClient) {
 	req := &sumapipb.SumRequest{
-		Calculation: &sumapipb.Sum{
+		Calculation: &sumapipb.Calculation{
 			FirstNumber:  10,
 			SecondNumber: 3,
 		},
